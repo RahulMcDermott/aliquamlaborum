@@ -1,0 +1,64 @@
+{
+  "name": "aliquamlaborum",
+  "version": "1.0.0",
+  "description": "A js/nodejs minimum Finite State Machine with fully ES6/ES7 support",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RahulMcDermott/aliquamlaborum.git"
+  },
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "keywords": [
+    "beatae",
+    "animi"
+  ],
+  "main": "index.js",
+  "author": "ToreyKuphal",
+  "ava": {
+    "files": [
+      "test/**/*.js",
+      "!test/bootstrap.js",
+      "!test/_*/**/*.js",
+      "!test/swagger/_*/**/*.js"
+    ],
+    "source": [
+      "src/**/*.js"
+    ],
+    "failFast": false,
+    "tap": false,
+    "require": [
+      "babel-core/register",
+      "babel-polyfill"
+    ],
+    "babel": "inherit"
+  },
+  "nyc": {
+    "require": [
+      "babel-core/register"
+    ],
+    "include": [
+      "src/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.0",
+    "babel-plugin-__coverage__": "^11.0.0",
+    "babel-preset-es2015-node4": "^2.1.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "eslint": "^3.10.0",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.6.0",
+    "nyc": "^8.4.0"
+  },
+  "homepage": "https://github.com/RahulMcDermott/aliquamlaborum.git"
+}
